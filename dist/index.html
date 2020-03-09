@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./assets/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="start__cover">
+        <h1 class="header">
+            <span class="major__title">MemoRansom</span>
+            <span class="minor__title">Dynamic blocks holding your memory to ransom</span>
+            <!-- <span class="kamsi">Kamsi is a good gamer</span> -->
+        </h1>
+        <div class="btn__wrapper">
+            <button class="start__game--button">Play</button>
+        </div>
+
+        <div class="author__description">
+            <span class="author">
+                <span class="tag">Developed By</span>
+                <span class="developer__name">
+                    Kevin Uti
+                </span>
+            </span>
+
+            <span class="contacts">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-github"></i>
+            </span>
+        </div>
+        
+    </div>
+
+
+    <div class="main__game">
+
+        <!-- ###### Game Board ########### -->
+        
+        <div class="board">
+        
+            <span class="col">
+                <div class="cell-1"></div>
+                <div class="cell-2"></div>
+                <div class="cell-3"></div>
+                <div class="cell-4"></div>
+                <div class="cell-5"></div>
+                <div class="cell-6"></div>
+            </span>
+            <span class="col">
+                <div class="cell-7"></div>
+                <div class="cell-8"></div>
+                <div class="cell-9"></div>
+                <div class="cell-10"></div>
+                <div class="cell-11"></div>
+                <div class="cell-12"></div>
+            </span>
+            <span class="col">
+                <div class="cell-13"></div>
+                <div class="cell-14"></div>
+                <div class="cell-15"></div>
+                <div class="cell-16"></div>
+                <div class="cell-17"></div>
+                <div class="cell-18"></div>
+            </span>
+            <span class="col">
+                <div class="cell-19"></div>
+                <div class="cell-20"></div>
+                <div class="cell-21"></div>
+                <div class="cell-22"></div>
+                <div class="cell-23"></div>
+                <div class="cell-24"></div>
+            </span>
+            <span class="col">
+                <div class="cell-25 human_select"></div>
+                <div class="cell-26"></div>
+                <div class="cell-27"></div>
+                <div class="cell-28"></div>
+                <div class="cell-29"></div>
+                <div class="cell-30"></div>
+            </span>
+            <span class="col">
+                <div class="cell-31 computer_select"></div>
+                <div class="cell-32"></div>
+                <div class="cell-33"></div>
+                <div class="cell-34"></div>
+                <div class="cell-35"></div>
+                <div class="cell-36"></div>
+            </span>
+        </div>
+        <!-- ################### -->
+
+        <!-- Score Board -->
+        <div class="score__board">
+            <div class="live">
+                <span class="label">Brain Cells</span>
+                <span class="arrow"></span>
+                <span class="value" id="live_value">8</span>
+            </div>
+            <hr>
+            <div class="level">
+                <span class="label">Level</span>
+                <span class="arrow"></span>
+                <span class="value" id="level_value"></span>
+            </div>
+            <hr><hr>
+            <div class="pseudo__detail">
+                    <i class="fa fa-play" id="play_icon"></i>
+                    <i class="fas fa-redo-alt" id="restart_icon"></i>
+                    <i class="fas fa-cog" id="settings_icon"></i>
+                    <i class="fas fa-info-circle" id="info_icon"></i>
+            </div>
+        </div>
+
+        <!-- Points Block -->
+        <div class="points__block">
+            <div class="ball__holder">
+                <span class="ball"></span>
+                <span class="ball"></span>
+                <span class="ball"></span>
+                <span class="ball"></span>
+                <span class="ball"></span>
+                <div class="current__score" id="stage_score">3/5</div>
+            </div>
+        </div>
+        <div class="author__description">
+            <span class="author">
+                <span class="tag">Developed By</span>
+                <span class="developer__name">
+                    Kevin Uti
+                </span>
+            </span>
+    
+            <span class="contacts">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-github"></i>
+            </span>
+        </div>
+    
+        <div class="floating_brain">
+            <i class="fas fa-brain"></i>
+        </div>
+    </div>
+
+    <!-- A simdple frame that comes up when game is over  -->
+    <!-- <div class="game__over">
+        <h2>Game Over</h2>
+        <h3>Restart</h3>
+    </div> -->
+<!-- 
+    <div class="settings">
+        <header class="difficulty">
+            difficulty
+        </header>
+        <div class="dif">
+        </div>
+    </div> -->
+
+    
+    </div>
+
+
+    <script>
+        const coverButton = document.querySelector(".start__game--button");
+        const startCover = document.querySelector(".start__cover");
+        coverButton.addEventListener('click', ()=>{
+            startCover.parentElement.removeChild(startCover);
+        }); 
+        
+    </script>
+<script type="text/javascript" src="js/bundle.js"></script></body>
+</html>
