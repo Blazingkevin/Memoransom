@@ -14,7 +14,6 @@
         <h1 class="header">
             <span class="major__title">MemoRansom</span>
             <span class="minor__title">Dynamic blocks holding your memory to ransom</span>
-            <!-- <span class="kamsi">Kamsi is a good gamer</span> -->
         </h1>
         <div class="btn__wrapper">
             <button class="start__game--button">Play</button>
@@ -33,8 +32,39 @@
                 <i class="fab fa-twitter"></i>
                 <i class="fab fa-github"></i>
             </span>
-        </div>
+        </div>   
+    </div>
+
+    <!-- Instructions area -->
+    <div class="start__cover kill__instruct" id="instruct">
+        <article>
+            <p>
+
+                Memoransome is a simple memory game conceived and built by Kevin Uti, primarily to demonstrate his javascript skill.
+                Playing Memoransome boils down to paying attention to the randomly selected boxes and repeating the pattern in the same order.
+                In each stage of Memoransome, there are five substages with equal difficulty. The progress in a stage is indicated by the yellow 
+                balls below the board. To get the task for the current substage, click on the blinking ball. Once the five substages have been completed,
+                you are promoted to the next level(and of course with higher difficulty).
+                
+                For each miss, you lose a brain cell. The game is over when you have no brain cells left.
+            </p>
+           
+            
+            <a id="noted_btn">Noted!</a>
+        </article>
         
+    </div>
+
+    <!-- Game Over -->
+    <div class="start__cover kill__instruct" id="game_over_cover">
+
+            <span class="over">
+                Game Over!
+            </span>
+
+            <a class="over_btn" id="new_game">
+                New Game
+            </a>
     </div>
 
 
@@ -106,7 +136,16 @@
             <div class="level">
                 <span class="label">Level</span>
                 <span class="arrow"></span>
-                <span class="value" id="level_value"></span>
+                <span class="value" id="level_value">
+                    <span id="score">4</span>
+                    <span id="bubbles">
+                        <span class="bubble-1"span></span>
+                        <span class="bubble-2"span></span>
+                        <span class="bubble-3"span></span>
+                    </span>
+                    <span class="water" id="water"></span>
+                </span>
+                
             </div>
             <hr><hr>
             <div class="pseudo__detail">
@@ -164,6 +203,8 @@
 
     
     </div>
+
+
 
 
     <script>
