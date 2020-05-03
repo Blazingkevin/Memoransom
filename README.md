@@ -9,7 +9,7 @@ balls below the board. To get the task for the current substage, click on the bl
 you are promoted to the next level(and of course with higher difficulty).
 For each miss, you lose a brain cell. The game is over when you have no brain cells left.
 
-### NB: Main purpose of project is to demontrate javascript skills hence, it's not mobile combatible.
+### NB: Main purpose of project is to demontrate javascript skills hence, it's not mobile compatible.
 
 ## Instructions
 
